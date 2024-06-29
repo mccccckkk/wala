@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <div style="position: absolute; top: 50px; left: 50px; right: 50px;">
+        ICLICK ANG HEART
+    </div>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Maldita,</strong>
+                        <p>
+                           unta ganahan ka ani ako gi made hihi. i love you so muchhhh. i hope i made your day happy and better. mao nani ako natun an sa yt hihi. love u!!!
+                        </p>
+                        <P><STrong>HAPPY MONTHSARY!!!</STrong></P>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+               
+            </div>
+        
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
